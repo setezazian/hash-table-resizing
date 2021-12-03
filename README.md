@@ -1,5 +1,9 @@
-# Toy Problem Setup Template
+# Hash Table Resizing
 
-This repo includes the initial setup for your toy problems. [`Use this template`](https://github.com/setezazian/toyproblem-setup/generate) and have fun!
+Create a hash table with `insert()`, `retrieve()`, and `remove()` methods.
+Be sure to handle hashing collisions correctly.
 
-[More info on how to use a template repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
+- Set your hash table up to double the storage limit as
+soon as the total number of items stored is greater than
+3/4th of the number of slots in the storage array.
+- Resize by half whenever utilization drops below 1/4.
